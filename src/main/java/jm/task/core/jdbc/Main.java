@@ -8,16 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-          US.createUsersTable();
-          US.saveUser("Alex", "Kalin", (byte) 22);
-          US.saveUser("Ale1", "Kalitkin", (byte) 12);
-          US.saveUser("Al2", "Kaninin", (byte) 122);
-          US.saveUser("A1", "Kal", (byte) 23);
-          US.getAllUsers();
-          US.cleanUsersTable();
-          US.dropUsersTable();
+        US.createUsersTable();
+        US.saveUser("Alex", "Kalin", (byte) 22);
+        US.saveUser("Ale1", "Kalitkin", (byte) 12);
+        US.saveUser("Al2", "Kaninin", (byte) 122);
+        US.saveUser("A1", "Kal", (byte) 23);
+        US.removeUserById(2);
+        US.getAllUsers();
+        US.cleanUsersTable();
+        US.dropUsersTable();
 
-//        US.removeUserById(2);
+
 
 
     }
